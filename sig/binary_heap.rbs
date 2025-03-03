@@ -1,0 +1,42 @@
+module BinaryHeap
+
+  VERSION: String
+
+  class Error
+  end
+
+  interface _Comparable
+    def <: (_Comparable) -> bool
+    def <=: (_Comparable) -> bool
+  end
+
+  class Base[unchecked out Elem < _Comparable]
+    @heap: Array[Elem]
+
+    def initialize: (?Array[Elem] ary) -> void
+
+    def length: () -> Integer
+
+    def each: () -> Enumerator[Elem]
+
+    def <<: (Elem el) -> self
+
+    def push: (*Elem els) -> self
+
+    def pop: () -> Elem?
+
+    def min: () -> Elem
+
+    def replace_min: (Elem el) -> self
+
+    def clear: () -> self
+
+    private
+
+    def heapify: () -> untyped
+
+    def rebalance_up: (untyped i) -> untyped
+
+    def rebalance_down: (untyped i) -> untyped
+  end
+end
