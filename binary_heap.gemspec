@@ -6,12 +6,13 @@ Gem::Specification.new do |spec|
   spec.name = "binary_heap"
   spec.version = BinaryHeap::VERSION
   spec.authors = ["Sebastian Krause"]
-  spec.email = ["skrause216@posteo.de"]
+  spec.email = ["sebastian.krause@gmx.de"]
 
   spec.summary = "A simple implementation of a binary heap in Ruby."
   spec.description = "A binary heap can be used as a priority queue."
   spec.required_ruby_version = ">= 3.0.0"
-
+  spec.homepage    = 'https://github.com/skr0504/binary_heap'
+  spec.license     = 'MIT'
 
 
   # Specify which files should be added to the gem when it is released.
